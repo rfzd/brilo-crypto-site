@@ -1,0 +1,30 @@
+version: "3"
+services:
+  nginx:
+    build:
+      context: ./docker/nginx
+      dockerfile: ./Dockerfile
+    ports:
+      - "8910:80"
+    volumes:
+      - ./public:/var/www/public
+    depends_on:
+      - php
+
+  php:
+    env_file:
+      - .env
+      - .env.local
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      HISTFILE: '/root/.history/.ash_history'
+    build:
+      context: .
+      dockerfile: ./docker/php-fpm/Dockerfile
+    volumes:
+      - .:/var/www
+      - root-history-data-php:/root/.history
+
+volumes:
+  root-history-data-php:
