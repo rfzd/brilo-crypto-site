@@ -16,9 +16,13 @@ build:
 	[[ -f .env.local ]] || cp .env.local.example .env.local
 	make build-app
 	make up
+	make init-app
 
 build-app:
 	docker compose build --no-cache
+
+init-app:
+	docker compose exec php composer install
 
 up:
 	docker compose up -d
