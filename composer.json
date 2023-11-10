@@ -59,12 +59,12 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "BrioCryptoSite\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "BrioCryptoSite\\Tests\\": "tests/"
         }
     },
     "replace": {

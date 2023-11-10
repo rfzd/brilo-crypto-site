@@ -1,7 +1,9 @@
 #!/usr/bin/env php
 <?php
 
-use App\Kernel;
+declare(strict_types=1);
+
+use BrioCryptoSite\Kernel;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 
 if (!is_file(dirname(__DIR__).'/vendor/autoload_runtime.php')) {
