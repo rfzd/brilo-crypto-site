@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 use Symfony\Component\Dotenv\Dotenv;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require sprintf('%s/vendor/autoload.php', dirname(path: __DIR__));
 
-if (file_exists(dirname(__DIR__) . '/config/bootstrap.php')) {
-    require dirname(__DIR__) . '/config/bootstrap.php';
-} elseif (method_exists(Dotenv::class, 'bootEnv')) {
-    (new Dotenv())->bootEnv(dirname(__DIR__) . '/.env');
+$bootstrapFile = sprintf('%s/config/bootstrap.php', dirname(path: __DIR__));
+if (file_exists(filename: $bootstrapFile) === true) {
+    require $bootstrapFile;
+} elseif (method_exists(object_or_class: Dotenv::class, method: 'bootEnv') === true) {
+    (new Dotenv())->bootEnv(path: sprintf('%s/.env', dirname(path: __DIR__)));
 }

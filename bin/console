@@ -6,14 +6,17 @@ declare(strict_types=1);
 use BrioCryptoSite\Kernel;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 
-if (!is_file(dirname(__DIR__).'/vendor/autoload_runtime.php')) {
+if (is_file(filename: sprintf('%s/vendor/autoload_runtime.php', dirname(path: __DIR__))) === false) {
     throw new LogicException('Symfony Runtime is missing. Try running "composer require symfony/runtime".');
 }
 
-require_once dirname(__DIR__).'/vendor/autoload_runtime.php';
+require_once sprintf('%s/vendor/autoload_runtime.php', dirname(path: __DIR__));
 
-return function (array $context) {
-    $kernel = new Kernel($context['APP_ENV'], (bool) $context['APP_DEBUG']);
+return static function (array $context): Application {
+    $kernel = new Kernel(
+		environment: $context['APP_ENV'],
+		debug: (bool) $context['APP_DEBUG'],
+	);
 
-    return new Application($kernel);
+    return new Application(kernel: $kernel);
 };
