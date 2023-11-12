@@ -17,7 +17,7 @@ use function json_decode;
 final class CoinDeskProvider implements CoinPriceProviderInterface
 {
     public function __construct(
-        private readonly CoinDeskRequestFactory $coinDeskRequestProvider,
+        private readonly CoinDeskRequestFactory $coinDeskRequestFactory,
         private readonly CoinPriceClient $coinPriceClient,
     ) {
     }
@@ -28,7 +28,7 @@ final class CoinDeskProvider implements CoinPriceProviderInterface
      */
     public function getCurrentBtcPrices(): CoinDto
     {
-        $request = $this->coinDeskRequestProvider->createGetCurrentBtcPricesRequest();
+        $request = $this->coinDeskRequestFactory->createGetCurrentBtcPricesRequest();
         $response = $this->coinPriceClient->sendRequest(request: $request);
 
         $jsonContent = $response->getBody()->getContents();

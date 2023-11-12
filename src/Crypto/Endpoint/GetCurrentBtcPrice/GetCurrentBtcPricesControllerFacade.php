@@ -56,7 +56,7 @@ final class GetCurrentBtcPricesControllerFacade
     /**
      * @param array<int, string> $currencies
      */
-    public function filterCoinPricesByCurrencies(
+    private function filterCoinPricesByCurrencies(
         CoinPriceDtoCollection $coinPrices,
         array $currencies,
     ): CoinPriceDtoCollection {
