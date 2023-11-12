@@ -28,9 +28,8 @@ final class GetCurrentBtcPricesControllerFacade
     ): GetCurrentBtcPriceResponse {
         $coinDto = $this->coinPriceProvider->getCurrentBtcPrices();
 
-        /** @var array<int, string>|float|int|bool|string|null $requestedCurrencies */
-        $requestedCurrencies = $request->query->get(key: 'currencies', default: null);
-        if ($requestedCurrencies === null) {
+        $requestedCurrencies = $request->query->all(key: 'currencies');
+        if ($requestedCurrencies === []) {
             return new GetCurrentBtcPriceResponse(coinDto: $coinDto);
         }
 
