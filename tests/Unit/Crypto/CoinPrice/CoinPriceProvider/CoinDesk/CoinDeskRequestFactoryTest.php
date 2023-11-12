@@ -54,7 +54,7 @@ final class CoinDeskRequestFactoryTest extends TestCase
         );
     }
 
-    private function createGetCurrentBtcPricesRequestDataProvider(): Generator
+    protected function createGetCurrentBtcPricesRequestDataProvider(): Generator
     {
         yield 'expected GetCurrentBtcPricesRequest' => [
             'expectedRequest' => new GuzzleRequest(

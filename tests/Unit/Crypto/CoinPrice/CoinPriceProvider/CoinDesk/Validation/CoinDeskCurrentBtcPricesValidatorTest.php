@@ -22,7 +22,7 @@ final class CoinDeskCurrentBtcPricesValidatorTest extends TestCase
         Assert::assertTrue(condition: true);
     }
 
-    private function currentBtcPricesValidJsonDataProvider(): Generator
+    protected function currentBtcPricesValidJsonDataProvider(): Generator
     {
         yield 'valid json with current btc prices' => [
             'validJson' => '
@@ -73,7 +73,7 @@ final class CoinDeskCurrentBtcPricesValidatorTest extends TestCase
         CoinDeskCurrentBtcPricesValidator::check(json: $invalidJson);
     }
 
-    private function currentBtcPricesInvalidJsonDataProvider(): Generator
+    protected function currentBtcPricesInvalidJsonDataProvider(): Generator
     {
         yield 'empty string' => [
             'invalidJson' => '',

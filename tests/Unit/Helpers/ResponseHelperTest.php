@@ -23,7 +23,7 @@ final class ResponseHelperTest extends TestCase
         Assert::assertTrue(condition: ResponseHelper::isOkStatusCode(response: $response));
     }
 
-    private function isOkStatusCodeDataProvider(): Generator
+    protected function isOkStatusCodeDataProvider(): Generator
     {
         yield 'HTTP_OK' => [Response::HTTP_OK];
         yield 'HTTP_ACCEPTED' => [Response::HTTP_ACCEPTED];
@@ -42,7 +42,7 @@ final class ResponseHelperTest extends TestCase
         Assert::assertFalse(condition: ResponseHelper::isOkStatusCode(response: $response));
     }
 
-    private function isNotOkStatusCodeDataProvider(): Generator
+    protected function isNotOkStatusCodeDataProvider(): Generator
     {
         yield 'HTTP_BAD_REQUEST' => [Response::HTTP_BAD_REQUEST];
         yield 'HTTP_INTERNAL_SERVER_ERROR' => [Response::HTTP_INTERNAL_SERVER_ERROR];
