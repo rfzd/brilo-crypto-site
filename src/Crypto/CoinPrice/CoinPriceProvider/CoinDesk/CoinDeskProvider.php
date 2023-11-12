@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk;
+namespace BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk;
 
-use BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\DtoFactory\CoinDeskCoinDtoFactory;
-use BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\Validation\CoinDeskCurrentBtcPricesValidator;
-use BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinPriceClient;
-use BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinPriceProviderInterface;
-use BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\Validation\Exception\CoinPriceCallException;
-use BrioCryptoSite\Crypto\CoinPrice\Dto\CoinDto;
+use BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\DtoFactory\CoinDeskCoinDtoFactory;
+use BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\Validation\CoinDeskCurrentBtcPricesValidator;
+use BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinPriceClient;
+use BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinPriceProviderInterface;
+use BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\Validation\Exception\CoinPriceCallException;
+use BriloCryptoSite\Crypto\CoinPrice\Dto\CoinDto;
 use JsonException;
 
 use function json_decode;

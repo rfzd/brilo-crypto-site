@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Helpers;
+namespace BriloCryptoSite\Helpers;
 
 use JsonException;
 use JsonSchema\Validator;

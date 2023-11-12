@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider;
+namespace BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider;
 
-use BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\Validation\Exception\CoinPriceCallException;
-use BrioCryptoSite\Helpers\ResponseHelper;
+use BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\Validation\Exception\CoinPriceCallException;
+use BriloCryptoSite\Helpers\ResponseHelper;
 use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Psr7\Request as GuzzleRequest;
 use Psr\Http\Client\ClientInterface;

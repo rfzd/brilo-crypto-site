@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Crypto\CoinPrice\Dto;
+namespace BriloCryptoSite\Crypto\CoinPrice\Dto;
 
 final class CoinPriceDto
 {

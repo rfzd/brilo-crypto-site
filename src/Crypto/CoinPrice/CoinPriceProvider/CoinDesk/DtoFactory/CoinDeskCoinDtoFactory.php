@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\DtoFactory;
+namespace BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\DtoFactory;
 
-use BrioCryptoSite\Crypto\CoinPrice\Dto\CoinDto;
-use BrioCryptoSite\Crypto\CoinPrice\Dto\CoinPriceDtoCollection;
+use BriloCryptoSite\Crypto\CoinPrice\Dto\CoinDto;
+use BriloCryptoSite\Crypto\CoinPrice\Dto\CoinPriceDtoCollection;
 use DateTimeImmutable;
 use DateTimeInterface;
 use RuntimeException;

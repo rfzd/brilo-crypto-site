@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use BrioCryptoSite\Kernel;
+use BriloCryptoSite\Kernel;
 
 require_once sprintf('%s/vendor/autoload_runtime.php', dirname(path: __DIR__));
 

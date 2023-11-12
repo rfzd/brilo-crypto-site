@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider;
+namespace BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider;
 
-use BrioCryptoSite\Crypto\CoinPrice\Dto\CoinDto;
+use BriloCryptoSite\Crypto\CoinPrice\Dto\CoinDto;
 
 interface CoinPriceProviderInterface
 {

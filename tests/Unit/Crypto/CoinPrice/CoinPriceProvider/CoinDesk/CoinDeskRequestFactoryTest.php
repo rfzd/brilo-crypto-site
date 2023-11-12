@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Tests\Unit\Crypto\CoinPrice\CoinPriceProvider\CoinDesk;
+namespace BriloCryptoSite\Tests\Unit\Crypto\CoinPrice\CoinPriceProvider\CoinDesk;
 
-use BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\CoinDeskRequestFactory;
-use BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\CoinDeskRouter;
+use BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\CoinDeskRequestFactory;
+use BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\CoinDeskRouter;
 use Generator;
 use GuzzleHttp\Psr7\Request as GuzzleRequest;
 use PHPUnit\Framework\Assert;

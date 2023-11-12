@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Crypto\Endpoint\GetCurrentBtcPrice\Model;
+namespace BriloCryptoSite\Crypto\Endpoint\GetCurrentBtcPrice\Model;
 
-use BrioCryptoSite\Crypto\CoinPrice\Dto\CoinDto;
-use BrioCryptoSite\Crypto\CoinPrice\Dto\CoinPriceDto;
+use BriloCryptoSite\Crypto\CoinPrice\Dto\CoinDto;
+use BriloCryptoSite\Crypto\CoinPrice\Dto\CoinPriceDto;
 use DateTimeImmutable;
 use JsonSerializable;
 

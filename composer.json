@@ -61,12 +61,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrioCryptoSite\\": "src/"
+            "BriloCryptoSite\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrioCryptoSite\\Tests\\": "tests/"
+            "BriloCryptoSite\\Tests\\": "tests/"
         }
     },
     "replace": {

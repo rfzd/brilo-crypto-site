@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk;
+namespace BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk;
 
 use GuzzleHttp\Psr7\Request as GuzzleRequest;
 use Symfony\Component\HttpFoundation\Request;

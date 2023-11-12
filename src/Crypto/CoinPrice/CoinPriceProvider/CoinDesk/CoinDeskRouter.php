@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk;
+namespace BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk;
 
 use function sprintf;
 

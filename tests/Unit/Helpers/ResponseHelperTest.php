@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Tests\Unit\Helpers;
+namespace BriloCryptoSite\Tests\Unit\Helpers;
 
-use BrioCryptoSite\Helpers\ResponseHelper;
+use BriloCryptoSite\Helpers\ResponseHelper;
 use Generator;
 use GuzzleHttp\Psr7\Response as GuzzleResponse;
 use PHPUnit\Framework\Assert;

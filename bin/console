@@ -3,7 +3,7 @@
 
 declare(strict_types=1);
 
-use BrioCryptoSite\Kernel;
+use BriloCryptoSite\Kernel;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 
 if (is_file(filename: sprintf('%s/vendor/autoload_runtime.php', dirname(path: __DIR__))) === false) {

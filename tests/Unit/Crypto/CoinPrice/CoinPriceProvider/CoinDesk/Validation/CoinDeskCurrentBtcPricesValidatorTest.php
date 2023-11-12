@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Tests\Unit\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\Validation;
+namespace BriloCryptoSite\Tests\Unit\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\Validation;
 
-use BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\Validation\CoinDeskCurrentBtcPricesValidator;
+use BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\Validation\CoinDeskCurrentBtcPricesValidator;
 use Generator;
 use JsonException;
 use PHPUnit\Framework\Assert;

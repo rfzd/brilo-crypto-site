@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\DtoFactory;
+namespace BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\DtoFactory;
 
-use BrioCryptoSite\Crypto\CoinPrice\Dto\CoinPriceDto;
+use BriloCryptoSite\Crypto\CoinPrice\Dto\CoinPriceDto;
 
 final class CoinDeskCoinPriceDtoFactory
 {

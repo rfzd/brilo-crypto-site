@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Crypto\Endpoint\GetCurrentBtcPrice;
+namespace BriloCryptoSite\Crypto\Endpoint\GetCurrentBtcPrice;
 
-use BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinPriceProviderInterface;
-use BrioCryptoSite\Crypto\CoinPrice\Dto\CoinDto;
-use BrioCryptoSite\Crypto\CoinPrice\Dto\CoinPriceDto;
-use BrioCryptoSite\Crypto\CoinPrice\Dto\CoinPriceDtoCollection;
-use BrioCryptoSite\Crypto\Endpoint\GetCurrentBtcPrice\Model\GetCurrentBtcPriceResponse;
+use BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinPriceProviderInterface;
+use BriloCryptoSite\Crypto\CoinPrice\Dto\CoinDto;
+use BriloCryptoSite\Crypto\CoinPrice\Dto\CoinPriceDto;
+use BriloCryptoSite\Crypto\CoinPrice\Dto\CoinPriceDtoCollection;
+use BriloCryptoSite\Crypto\Endpoint\GetCurrentBtcPrice\Model\GetCurrentBtcPriceResponse;
 use InvalidArgumentException;
 use Symfony\Component\HttpFoundation\Request;
 

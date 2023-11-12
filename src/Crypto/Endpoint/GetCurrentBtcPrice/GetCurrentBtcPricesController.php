@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Crypto\Endpoint\GetCurrentBtcPrice;
+namespace BriloCryptoSite\Crypto\Endpoint\GetCurrentBtcPrice;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\Validation;
+namespace BriloCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\Validation;
 
-use BrioCryptoSite\Helpers\JsonValidator;
+use BriloCryptoSite\Helpers\JsonValidator;
 use JsonException;
 
 final class CoinDeskCurrentBtcPricesValidator
