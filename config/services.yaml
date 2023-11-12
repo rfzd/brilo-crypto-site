@@ -24,3 +24,11 @@ services:
     my_guzzle_http_client:
         class: 'GuzzleHttp\Client'
 
+    BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\CoinDeskProvider: ~
+    BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinPriceProviderInterface: '@BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\CoinDeskProvider'
+
+    BrioCryptoSite\Crypto\CoinPrice\CoinPriceProvider\CoinDesk\CoinDeskRouter:
+        arguments:
+            $baseUrl: '%env(resolve:COIN_DESK_BASE_URL)%'
+            $apiVersion: '%env(resolve:COIN_DESK_API_VERSION)%'
+            $btcCurrentPriceRoute: '%env(resolve:COIN_DESK_BTC_CURRENT_PRICE_ROUTE)%'

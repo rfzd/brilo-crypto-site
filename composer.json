@@ -85,7 +85,8 @@
         ],
         "phpcs": "phpcs",
         "phpcbf": "phpcbf",
-        "phpstan": "php -d memory_limit=-1 vendor/bin/phpstan analyse -c phpstan.dist.neon -vv"
+        "phpstan": "php -d memory_limit=-1 vendor/bin/phpstan analyse -c phpstan.dist.neon -vv",
+        "test:unit": "php bin/phpunit --configuration=phpunit.xml"
     },
     "conflict": {
         "symfony/symfony": "*"
