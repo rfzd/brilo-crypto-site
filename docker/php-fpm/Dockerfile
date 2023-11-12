@@ -26,6 +26,8 @@ RUN echo "Installing dev specific dependencies" \
       xdebug-"${XDEBUG_VERSION}" \
     && rm -rf /var/cache/apk/* /root/.cache
 
+RUN apk add --update nodejs npm
+
 WORKDIR /var/www
 
 CMD ["/entrypoint.server.sh"]

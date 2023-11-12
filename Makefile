@@ -23,6 +23,8 @@ build-app:
 
 init-app:
 	docker compose exec php composer install
+	docker compose exec php npm install --frozen-lockfile
+	docker compose exec php npm run dev
 
 up:
 	docker compose up -d

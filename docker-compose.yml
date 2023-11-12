@@ -8,6 +8,7 @@ services:
       - "8910:80"
     volumes:
       - ./public:/var/www/public
+      - ./assets:/var/www/assets
     depends_on:
       - php
 
